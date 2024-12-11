@@ -19,4 +19,5 @@
 git clone --depth 1 https://github.com/xiaorouji/openwrt-passwall package/luci-app-passwall
 git clone --depth 1 https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall
 rm -rf package/openwrt-passwall/shadowsocks-rust
+rm -rf package/openwrt-passwall/v2ray-geoview
 sed -i 's/192.168.1.1/10.1.1.1/g' package/base-files/files/bin/config_generate
