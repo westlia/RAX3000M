@@ -17,6 +17,7 @@
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 git clone --depth 1 https://github.com/xiaorouji/openwrt-passwall package/luci-app-passwall
+git clone --depth 1 https://github.com/xiaorouji/openwrt-passwall2 package/luci-app-passwall2
 git clone --depth 1 https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall
 rm -rf package/openwrt-passwall/shadowsocks-rust
 sed -i 's/192.168.1.1/10.1.1.1/g' package/base-files/files/bin/config_generate
